@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --pink-color: rgba(214, 46, 51 , 0.6);
+    --red-color: #D62E33;
+    --white-color: #fff;
+}
+/* start component */
+.layout{
+    background-color: var(--pink-color);
+}
+/* end component */
+/* start home */
+.home{
+    background-image: url(../images/home.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home h1{
+    font-size: 4rem;
+}
+.home .menu{
+    cursor: pointer;
+    /* margin-left: 200px; */
+}
+.home #leftMenu{
+    width: 0;
+    overflow: hidden;
+}
+.home #leftMenu a{
+    transition: all 300ms ease;
+}
+.home #leftMenu a:hover{
+    color: var(--red-color) !important;
+}
+/* end home */
+/* start singers-info */
+.singers-info h3{
+    background-color: var(--pink-color);
+    cursor: pointer;
+}
+.inner{
+    display: none;
+}
+/* end singers-info */
+/* start count */
+.count{
+    background-image: url(../images/count.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* end count */
+/* start contact */
+.contact h4,
+.contact h2{
+    font-weight: 900;
+}
+.contact .social-media span{
+    cursor: pointer;
+}
+.contact .social-media span:hover{
+    background-color: var(--red-color);
+    color: var(--white-color);
+    border-color: var(--red-color) !important;
+}
+.contact textarea{
+    height: 200px !important;
+}
+.contact .btn{
+    background-color: var(--red-color);
+}
+/* end contact */
